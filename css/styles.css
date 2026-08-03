@@ -78,6 +78,7 @@ a:hover {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -221,6 +222,7 @@ ul, ol {
 .nav-brand img {
   width: 38px;
   height: 38px;
+  min-width: 38px;
   border-radius: var(--radius-sm);
   object-fit: cover;
 }
@@ -1006,6 +1008,12 @@ ul, ol {
   margin-bottom: 2.5rem;
 }
 
+.footer-brand .nav-brand img {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+}
+
 .footer-brand p {
   color: var(--text-secondary);
   font-size: 0.9rem;
@@ -1293,6 +1301,8 @@ ul, ol {
 .founder-avatar {
   width: 160px;
   height: 160px;
+  max-width: 160px;
+  max-height: 160px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--bg-card);
@@ -1328,9 +1338,11 @@ ul, ol {
 }
 
 .social-link svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
   fill: currentColor;
+  flex-shrink: 0;
 }
 
 .social-link:hover {
